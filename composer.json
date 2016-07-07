@@ -1,0 +1,31 @@
+{
+    "name": "yireo/yireo_examplejscomponent",
+    "license": "OSL-3",
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "homepage": "https://github.com/yireo/Yireo_ExampleJsComponent",
+    "description": "Example module to show functionality of JS component in Magento 2",
+    "keywords":[ "composer-installer", "magento"],
+    "authors": [
+        {
+            "name": "Jisse Reitsma (Yireo)",
+            "email": "jisse@yireo.com"
+        }
+    ],
+    "require": {
+        "magento/framework": "100.0.*",
+        "php": ">=5.6.0"
+    },
+    "require-dev":{
+        "phpunit/phpunit":"*",
+        "composer/composer":"*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yireo\\ExampleJsComponent\\": ""
+        },        
+        "files": [
+            "registration.php"
+        ]
+    }
+}

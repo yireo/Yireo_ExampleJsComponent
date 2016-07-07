@@ -1,0 +1,8 @@
+<?php
+/** @var $block Yireo\ExampleJsComponent\Block\Example */
+?>
+<script>
+    require(["jquery", "example"], function ($, example) {
+        console.log('<?php echo $block->getMessage(); ?>');
+    });
+</script>

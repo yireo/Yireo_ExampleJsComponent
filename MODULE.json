@@ -3,5 +3,7 @@
     "composer_name": "yireo/yireo_examplejscomponent",
     "sequence": [
         "Magento_Theme"
-    ]
+    ],
+    "phpcs_severity": "7",
+    "phpstan_level": "5"
 }

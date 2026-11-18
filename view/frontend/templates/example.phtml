@@ -1,8 +1,9 @@
 <?php
 /** @var $block Yireo\ExampleJsComponent\Block\Example */
+/** @var \Magento\Framework\Escaper $escaper */
 ?>
 <script>
     require(["jquery", "example"], function ($, example) {
-        console.log('<?php echo $block->getMessage(); ?>');
+        console.log('<?= $escaper->escapeJs($block->getMessage()) ?>');
     });
 </script>

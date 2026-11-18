@@ -1,1 +1,7 @@
-{}
+{
+    "module_name": "Yireo_ExampleJsComponent",
+    "composer_name": "yireo/yireo_examplejscomponent",
+    "sequence": [
+        "Magento_Theme"
+    ]
+}

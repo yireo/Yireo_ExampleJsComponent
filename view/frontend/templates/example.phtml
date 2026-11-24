@@ -1,9 +1,9 @@
 <?php
-/** @var $block Yireo\ExampleJsComponent\Block\Example */
-/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Yireo\ExampleJsComponent\Block\Example $block */
 ?>
-<script>
-    require(["jquery", "example"], function ($, example) {
-        console.log('<?= $escaper->escapeJs($block->getMessage()) ?>');
-    });
+<script type="text/x-magento-init">
+<?= /* @noEscape */ json_encode(
+    ['*' => ['Yireo_ExampleJsComponent/js/example' => ['message' => $block->getMessage()]]],
+    JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT
+) ?>
 </script>
